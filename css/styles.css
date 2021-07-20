@@ -336,8 +336,8 @@ a {
   margin-bottom: 9px;
 }
 .social-networks-box {
-  padding-top: 12px;
-  padding-left: 70px;
+  margin-top: 12px;
+  margin-left: 70px;
   fill: var(--fon-color);
 }
 .social-networks-text {
