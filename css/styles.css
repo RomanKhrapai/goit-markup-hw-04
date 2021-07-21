@@ -123,7 +123,7 @@ a {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("./images/fon.jpg");
+    url("../images/fon.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -285,7 +285,6 @@ a {
   display: flex;
 }
 .client-link {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
@@ -294,7 +293,6 @@ a {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .client-icon {
   fill: inherit;
@@ -302,6 +300,7 @@ a {
 .client-link:hover,
 .client-link:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /* footer */
 .low {
@@ -311,6 +310,7 @@ a {
 }
 .low-container {
   display: flex;
+  align-items: baseline;
 }
 .low-logo {
   display: inline-block;
@@ -336,7 +336,6 @@ a {
   margin-bottom: 9px;
 }
 .social-networks-box {
-  margin-top: 12px;
   margin-left: 70px;
   fill: var(--fon-color);
 }
@@ -384,8 +383,11 @@ a {
   margin-left: var(--interval-box);
   margin-top: var(--interval-box);
 }
-.works-item:hover,
-.works-item:focus {
+.works-link {
+  display: block;
+}
+.works-link:hover,
+.works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
